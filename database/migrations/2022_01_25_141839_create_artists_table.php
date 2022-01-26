@@ -17,8 +17,10 @@ class CreateArtistsTable extends Migration
             $table->id();
             $table->string('name', 20);
             $table->string('surname', 20);
-            $table->string('stage_name', 20)->nullable();
-            $table->date('date_of_birth', 20);
+            $table->string('stage_name', 40)->nullable();
+            $table->date('dateOfBirth', 20);
+            $table->string('website', 100)->nullable();
+            $table->text('bio');
         });
     }
 
